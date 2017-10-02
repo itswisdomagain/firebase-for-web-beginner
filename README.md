@@ -24,18 +24,17 @@ firebase.auth().createUserWithEmailAndPassword(email, password)
   alert(errorMessage);
 });
 ```
- 
- [Learn more from the Firebase Docs](https://firebase.google.com/docs/auth/web/password-auth#create_a_password-based_account)
+ [Learn more from the Firebase Documentation](https://firebase.google.com/docs/auth/web/password-auth#create_a_password-based_account)
 
 
 ## Login with Email and Password
 
 ```
 firebase.auth().signInWithEmailAndPassword(email, password)
-.then(function(user){
-	// this function is called if the login attempt was successful
-	console.log(user);
-	alert('Yay! Your registration was successful!');
+.then(function(result) {
+  // this function is called if the login attempt was successful
+  console.log(user);
+  alert('Yay! Your log in was successful!');
 })
 .catch(function(error) {
   // this catch function is triggered if login attempt fails
@@ -44,8 +43,7 @@ firebase.auth().signInWithEmailAndPassword(email, password)
   alert(errorMessage);
 });
 ```
- 
- [Learn more from the Firebase Docs](https://firebase.google.com/docs/auth/web/password-auth#sign_in_a_user_with_an_email_address_and_password)
+ [Learn more from the Firebase Documentation](https://firebase.google.com/docs/auth/web/password-auth#sign_in_a_user_with_an_email_address_and_password)
 
 
 ## Login with Google
@@ -73,7 +71,6 @@ firebase.auth().signInWithPopup(provider)
   alert(errorMessage);
 });
 ```
- 
  [Learn more from the Firebase Docs](https://firebase.google.com/docs/auth/web/google-signin)
 
 
@@ -81,9 +78,9 @@ firebase.auth().signInWithPopup(provider)
 
 ```
 firebase.auth().signOut()
-.then(function(){
-	// Sign-out successful
-	alert('Yas! You have been signed out!');
+.then(function(result) {
+  // Sign-out successful
+  alert('You have been signed out!');
 })
 .catch(function(error) {
   // an error occured
