@@ -1,0 +1,28 @@
+[debug] [2017-10-02T08:37:55.177Z] ----------------------------------------------------------------------
+[debug] [2017-10-02T08:37:55.181Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-10-02T08:37:55.182Z] CLI Version:   3.9.2
+[debug] [2017-10-02T08:37:55.182Z] Platform:      darwin
+[debug] [2017-10-02T08:37:55.182Z] Node Version:  v6.11.2
+[debug] [2017-10-02T08:37:55.183Z] Time:          Mon Oct 02 2017 09:37:55 GMT+0100 (WAT)
+[debug] [2017-10-02T08:37:55.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-02T08:37:55.250Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-02T08:37:55.250Z] > authorizing via signed-in user
+[debug] [2017-10-02T08:37:55.254Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/intro-to-firebase-web  
+ Mon Oct 02 2017 09:37:55 GMT+0100 (WAT)
+[debug] [2017-10-02T08:38:13.022Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T08:38:13.025Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/intro-to-firebase-web/tokens  
+ Mon Oct 02 2017 09:38:13 GMT+0100 (WAT)
+[debug] [2017-10-02T08:38:14.215Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Volumes/Storage/C0D3/Practice/OpenSource/firebase-web-intro/3. complete-code'...
+[info] 
+[debug] [2017-10-02T08:38:14.220Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/intro-to-firebase-web  
+ Mon Oct 02 2017 09:38:14 GMT+0100 (WAT)
+[debug] [2017-10-02T08:38:15.596Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T08:38:15.596Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/645033460384/clients/_:getWebAppConfig  
+ Mon Oct 02 2017 09:38:15 GMT+0100 (WAT)
+[debug] [2017-10-02T08:38:16.822Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: /
+[info] ✔  hosting: Local server: http://localhost:5000
+

@@ -2,6 +2,8 @@
 
 This is the source code for the Intro to Firebase for Web developers hangout organzied by GDG Port Harcourt on September 30th, 2017. It includes the basic html, css and js files to get you started, the slides presented and the final complete version.
 
+[Check out the DEMO of the complete version](https://intro-to-firebase-web.firebaseapp.com)
+
 ## Following along
 
  - Begin with the starter-code
@@ -49,6 +51,14 @@ firebase.auth().signInWithEmailAndPassword(email, password)
 ## Login with Google
 
 ```
+/**
+The following code will fail if you are running your site by directly opening the file with your browser. A requirement for logging users in through the federated providers (e.g. Google) is to run your site through a server.
+
+To fix this challenge, refer to the Firebase Hosting slide to learn how to set up your site for hosting on Firebase. Then instead of running fireabse deploy, run firebase serve
+
+You'll be given a localhost:port url to test your site with. Google login should work now!
+**/
+
 var provider = new firebase.auth.GoogleAuthProvider();
 firebase.auth().signInWithPopup(provider)
 .then(function(result) {
