@@ -104,6 +104,21 @@ button:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 2px solid #eee;
+}
+
+#chat-messages > li {
+	padding: 6px;
+}
+
+#chat-messages li:nth-child(odd){
+	background-color: #eee;
+}
+
+#chat-messages li:nth-child(even){
+	background-color: #fff;
 }
 
 .buttons {

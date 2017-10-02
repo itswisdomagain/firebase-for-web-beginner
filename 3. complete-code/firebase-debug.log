@@ -1,28 +1,36 @@
-[debug] [2017-10-02T08:37:55.177Z] ----------------------------------------------------------------------
-[debug] [2017-10-02T08:37:55.181Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2017-10-02T08:37:55.182Z] CLI Version:   3.9.2
-[debug] [2017-10-02T08:37:55.182Z] Platform:      darwin
-[debug] [2017-10-02T08:37:55.182Z] Node Version:  v6.11.2
-[debug] [2017-10-02T08:37:55.183Z] Time:          Mon Oct 02 2017 09:37:55 GMT+0100 (WAT)
-[debug] [2017-10-02T08:37:55.183Z] ----------------------------------------------------------------------
+[debug] [2017-10-02T09:48:57.774Z] ----------------------------------------------------------------------
+[debug] [2017-10-02T09:48:57.778Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-10-02T09:48:57.779Z] CLI Version:   3.9.2
+[debug] [2017-10-02T09:48:57.779Z] Platform:      darwin
+[debug] [2017-10-02T09:48:57.779Z] Node Version:  v6.11.2
+[debug] [2017-10-02T09:48:57.780Z] Time:          Mon Oct 02 2017 10:48:57 GMT+0100 (WAT)
+[debug] [2017-10-02T09:48:57.780Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-10-02T08:37:55.250Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-10-02T08:37:55.250Z] > authorizing via signed-in user
-[debug] [2017-10-02T08:37:55.254Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/intro-to-firebase-web  
- Mon Oct 02 2017 09:37:55 GMT+0100 (WAT)
-[debug] [2017-10-02T08:38:13.022Z] <<< HTTP RESPONSE 200
-[debug] [2017-10-02T08:38:13.025Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/intro-to-firebase-web/tokens  
- Mon Oct 02 2017 09:38:13 GMT+0100 (WAT)
-[debug] [2017-10-02T08:38:14.215Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T09:48:57.847Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-02T09:48:57.847Z] > authorizing via signed-in user
+[debug] [2017-10-02T09:48:57.850Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-02T09:48:57.851Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/kbJqeLkbsag1frf5Q-KynfFFB27H2zJV07AHEZmazn4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Oct 02 2017 10:48:57 GMT+0100 (WAT)
+[debug] [2017-10-02T09:49:06.231Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T09:49:06.283Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/intro-to-firebase-web  
+ Mon Oct 02 2017 10:49:06 GMT+0100 (WAT)
+[debug] [2017-10-02T09:49:24.452Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T09:49:24.454Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/intro-to-firebase-web/tokens  
+ Mon Oct 02 2017 10:49:24 GMT+0100 (WAT)
+[debug] [2017-10-02T09:49:26.401Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Volumes/Storage/C0D3/Practice/OpenSource/firebase-web-intro/3. complete-code'...
 [info] 
-[debug] [2017-10-02T08:38:14.220Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/intro-to-firebase-web  
- Mon Oct 02 2017 09:38:14 GMT+0100 (WAT)
-[debug] [2017-10-02T08:38:15.596Z] <<< HTTP RESPONSE 200
-[debug] [2017-10-02T08:38:15.596Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/645033460384/clients/_:getWebAppConfig  
- Mon Oct 02 2017 09:38:15 GMT+0100 (WAT)
-[debug] [2017-10-02T08:38:16.822Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T09:49:26.404Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/intro-to-firebase-web  
+ Mon Oct 02 2017 10:49:26 GMT+0100 (WAT)
+[debug] [2017-10-02T09:49:37.151Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-02T09:49:37.152Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/645033460384/clients/_:getWebAppConfig  
+ Mon Oct 02 2017 10:49:37 GMT+0100 (WAT)
+[debug] [2017-10-02T09:49:48.766Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: /
 [info] ✔  hosting: Local server: http://localhost:5000
 
