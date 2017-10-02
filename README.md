@@ -60,7 +60,8 @@ firebase.auth().signInWithPopup(provider)
   var user = result.user;
   // ...
   alert('You have been signed in successfully!');
-}).catch(function(error) {
+})
+.catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
