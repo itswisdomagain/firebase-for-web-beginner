@@ -12,10 +12,10 @@ This is the source code for the Intro to Firebase for Web developers hangout org
 
 ```
 firebase.auth().createUserWithEmailAndPassword(email, password)
-.then(function(user){
-	// this function is called if the registration was successful
-	console.log(user);
-	alert('Yay! Your registration was successful!');
+.then(function(result) {
+  // this function is called if the registration was successful
+  console.log(user);
+  alert('Yay! Your registration was successful!');
 })
 .catch(function(error) {
   // this catch function is triggered if registration fails
