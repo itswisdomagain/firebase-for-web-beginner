@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Firebase authentication on the web, with email/password and google accounts">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat - Using Firebase Database</title>
+
+	<link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+	<img src="assets/images/firebase.png" class="firebase-logo hang-left">
+
+	<!-- onclick functionality (function logOut()) is implemented in assets/scripts/chat.js -->
+	<button class="hang-right" onclick="logOut()">Log Out</button> 
+
+	<div class="chat-box">
+		<ul id="chat-messages">
+			<!-- chat messages will be added as list items to this list as we get them from the firebase database -->
+		</ul>
+
+		<div>
+			<label for="message">Enter a message to send</label>
+			<input type="text" name="message" id="messageInput">
+		</div>
+
+		<div class="buttons">
+			<!-- onclick functionality (function sendMessage()) is implemented in assets/scripts/chat.js -->
+			<button onclick="sendMessage()">Send</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/scripts/chat.js"></script>
+</body>
+</html>
