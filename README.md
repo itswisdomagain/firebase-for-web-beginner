@@ -24,6 +24,9 @@ firebase.auth().createUserWithEmailAndPassword(email, password)
   alert(errorMessage);
 });
 ```
+ 
+ [Learn more from the Firebase Docs](https://firebase.google.com/docs/auth/web/password-auth#create_a_password-based_account)
+
 
 ## Login with Email and Password
 
@@ -36,6 +39,53 @@ firebase.auth().signInWithEmailAndPassword(email, password)
 })
 .catch(function(error) {
   // this catch function is triggered if login attempt fails
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  alert(errorMessage);
+});
+```
+ 
+ [Learn more from the Firebase Docs](https://firebase.google.com/docs/auth/web/password-auth#sign_in_a_user_with_an_email_address_and_password)
+
+
+## Login with Google
+
+```
+var provider = new firebase.auth.GoogleAuthProvider();
+firebase.auth().signInWithPopup(provider)
+.then(function(result) {
+  // This gives you a Google Access Token. You can use it to access the Google API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  // ...
+  alert('You have been signed in successfully!');
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+  // ...
+  alert(errorMessage);
+});
+```
+ 
+ [Learn more from the Firebase Docs](https://firebase.google.com/docs/auth/web/google-signin)
+
+
+## Sign out completely
+
+```
+firebase.auth().signOut()
+.then(function(){
+	// Sign-out successful
+	alert('Yas! You have been signed out!');
+})
+.catch(function(error) {
+  // an error occured
   var errorCode = error.code;
   var errorMessage = error.message;
   alert(errorMessage);
